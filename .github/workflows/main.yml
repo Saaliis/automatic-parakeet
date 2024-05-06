@@ -21,6 +21,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: pip
         run: pip install faker
+      - name: jsonconvert.py
+        run: python jsonconvert.py  
       - name: create csv file
         run: python generate.py  
       # lägg till create csv file (glöm inte pip install)
